@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Mustafa Abdu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="top-nav container">
+      <a class="brand" href="index.html">Mustafa Abdu</a>
+      <ul class="nav-links">
+        <li><a href="index.html">CV</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="content-grid">
+      <aside class="profile-sidebar card">
+          <div class="profile-pic-wrap">
+              <img src="images/me.png" alt="Profile photo of Mustafa Abdu" class="profile-pic" />
+          </div>
+          <h2 class="title" style="margin-top: 1rem;">Mustafa Abdu</h2>
+          <p class="subtitle" style="margin-bottom: 1rem;">IT Student, KAU</p>
+
+          <h3 style="margin: 0.5rem 0 0.5rem 0; font-size: 1.1rem; color: var(--brand2);">Contact</h3>
+          <p style="margin: 0.5rem 0;">
+              Email: <a href="mailto:mabdu0012@stu.kau.edu.sa">mabdu0012@stu.kau.edu.sa</a>
+          </p>
+          <p style="margin: 0.5rem 0;">
+              Phone: <a href="tel:+966503331386">+966 50 333 1386</a>
+          </p>
+
+          <div class="sidebar-social-links" style="margin-top: 1rem;">
+              <a href="https://www.linkedin.com/in/mustafa-abdu-1855b4308" target="_blank" rel="noopener" class="social-icon">
+                  <img src="images/linkedin.png" alt="LinkedIn Icon" />
+              </a>
+              <a href="https://x.com/_mustafa_abdu" target="_blank" rel="noopener" class="social-icon">
+                  <img src="images/x.png" alt="X (Twitter) Icon" />
+              </a>
+          </div>
+          <a class="button" href="mailto:mabdu0012@stu.kau.edu.sa" style="margin-top: 1.5rem;">Contact Me</a>
+      </aside>
+
+      <main class="main-content">
+        <section class="card">
+          <h1>Contact Me</h1>
+          <form class="contact-form" method="post" action="https://webhook.site/12345678-1234-1234-1234-123456789abc" novalidate>
+            <div class="form-row">
+              <label for="name">Name <span class="req">*</span></label>
+              <input id="name" name="name" type="text" required minlength="2" maxlength="50" />
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email (optional)</label>
+              <input id="email" name="email" type="email" placeholder="your.email@example.com" />
+            </div>
+
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="10" placeholder="Write your message here..." required minlength="10" maxlength="1000"></textarea>
+            </div>
+
+            <fieldset class="form-row radios">
+              <legend>Message Type</legend>
+              <div class="radio-options">
+                <label><input type="radio" name="type" value="Inquiry" checked /> Inquiry</label>
+                <label><input type="radio" name="type" value="Complaint" /> Complaint</label>
+              </div>
+            </fieldset>
+
+            <div class="cta-row">
+              <button class="button" type="submit">Send Message</button>
+              <a class="button ghost" href="mailto:mabdu0012@stu.kau.edu.sa">Or Email Me</a>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Mustafa Abdu — CPIT 405 Assignment 1</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
